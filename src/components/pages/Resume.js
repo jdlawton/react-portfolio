@@ -1,5 +1,6 @@
 import React from 'react';
 
+//This component returns the div that contains all of the content for the Resume portion of the site.
 const Resume = () => (
     <div>
         <h1>Resume Page</h1>

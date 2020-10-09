@@ -1,5 +1,6 @@
 import React from 'react';
 
+//This component returns the div that contains all of the content for the Projects portion of the site.
 const Projects = () => (
     <div>
         <h1>Projects Page</h1>

@@ -1,5 +1,6 @@
 import React from 'react';
 
+//This component returns the div that contains all of the content for the About Me portion of the site.
 const About = () => (
     <div>
         <h1>About Me Page</h1>

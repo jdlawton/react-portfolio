@@ -1,5 +1,6 @@
 import React from 'react';
 
+//This component returns the div that contains all of the content for the Contact portion of the site.
 const Contact = () => (
     <div>
         <h1>Contact Form Page</h1>
