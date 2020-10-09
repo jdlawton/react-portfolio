@@ -22,3 +22,7 @@ code {
   margin-right: 25px;
   margin-left: 25px;
 }
+
+.navActive {
+  color: red;
+}
