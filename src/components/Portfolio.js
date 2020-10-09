@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import Nav from './Nav';
+import Footer from './Footer';
 import About from './pages/About';
 import Projects from './pages/Projects';
 import Contact from './pages/Contact';
@@ -31,8 +32,10 @@ function Portfolio() {
     //handle rendering and highlighting the page titles in the navigation bar.
     return (
         <div>
+            <h1>Joe Lawton</h1>
             <Nav currentPage={currentPage} setCurrentPage={setCurrentPage} />
             <div>{renderPage(currentPage)}</div>
+            <Footer />
         </div>
     );
 }
