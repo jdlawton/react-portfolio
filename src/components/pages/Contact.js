@@ -1,22 +1,41 @@
-import React from 'react';
+import React, {useState} from 'react';
+
 
 //This component returns the div that contains all of the content for the Contact portion of the site.
-const Contact = () => (
-    <div>
-        <h1>Contact Form Page</h1>
-        <p>
-            Donec a volutpat quam. Curabitur nec varius justo, sed rutrum ligula. Curabitur pellentesque
-            turpis sit amet eros iaculis, a mollis arcu dictum. Ut vel ante eget massa ornare placerat.
-            Etiam nisl orci, finibus sodales volutpat et, hendrerit ut dolor. Suspendisse porta dictum
-            nunc, sed pretium risus rutrum eget. Nam consequat, ligula in faucibus vestibulum, nisi justo
-            laoreet risus, luctus luctus mi lacus sit amet libero. Class aptent taciti sociosqu ad litora
-            torquent per conubia nostra, per inceptos himenaeos. Mauris pretium condimentum tellus eget
-            lobortis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec placerat
-            accumsan mi, ut congue neque placerat eu. Donec nec ipsum in velit pellentesque vehicula sit
-            amet at augue. Maecenas aliquam bibendum congue. Pellentesque semper, lectus non ullamcorper
-            iaculis, est ligula suscipit velit, sed bibendum turpis dui in sapien.
-        </p>
-    </div>
-);
+const Contact = () => {
+
+    const [formState, setFormState] = useState({name: '', email: '', message: ''});
+    const {name, email, message} = formState;
+
+    function handleChange(e) {
+        setFormState({...formState, [e.target.name]: e.target.value});
+    };
+
+    function handleSubmit(e) {
+        e.preventDefault();
+        console.log(formState);
+    };
+
+    return (
+        <section>
+            <h1>Contact me</h1>
+            <form id="contact-form" onSubmit={handleSubmit}>
+            <div>
+                <label htmlFor="name">Name:</label>
+                <input type="text" name="name" defaultValue={name} onChange={handleChange} />
+            </div>
+            <div>
+                <label htmlFor="email">Email address:</label>
+                <input type="email" name="email" defaultValue={email} onChange={handleChange} />
+            </div>
+            <div>
+                <label htmlFor="message">Message:</label>
+                <textarea name="message" rows="5" defaultValue={message} onChange={handleChange} />
+            </div>
+            <button type="submit">Submit</button>
+            </form>
+        </section>
+    );
+}
 
 export default Contact;
