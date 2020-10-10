@@ -50,8 +50,8 @@ const Projects = () => (
     <div>
         <h1>Projects</h1>
             {projects.map(project => (
-                <div class={project.style}> 
-                    <a href={project.liveURL} target="_blank" rel="noopener noreferrer" key={project.name }>
+                <div className={project.style} key={project.name}> 
+                    <a href={project.liveURL} target="_blank" rel="noopener noreferrer" >
                         {project.name}
                     </a>
                     <a href={project.ghURL} target="_blank" rel="noopener noreferrer">
