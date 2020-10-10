@@ -26,3 +26,27 @@ code {
 .navActive {
   color: red;
 }
+
+.run-buddy {
+  background-color: lightseagreen;
+}
+
+.robot-gladiators {
+  background-color: lightgreen;
+}
+
+.prestige-worldwide {
+  background-color: lightsalmon;
+}
+
+.fo-char-mgr {
+  background-color: lightblue;
+}
+
+.noteworthy {
+  background-color: lightslategray;
+}
+
+.blog {
+  background-color: lightcoral;
+}
