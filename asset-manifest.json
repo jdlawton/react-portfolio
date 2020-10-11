@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/react-portfolio/static/css/main.386505b1.chunk.css",
+    "main.js": "/react-portfolio/static/js/main.b4ed62b8.chunk.js",
+    "main.js.map": "/react-portfolio/static/js/main.b4ed62b8.chunk.js.map",
+    "runtime-main.js": "/react-portfolio/static/js/runtime-main.213b1880.js",
+    "runtime-main.js.map": "/react-portfolio/static/js/runtime-main.213b1880.js.map",
+    "static/js/2.b19e5834.chunk.js": "/react-portfolio/static/js/2.b19e5834.chunk.js",
+    "static/js/2.b19e5834.chunk.js.map": "/react-portfolio/static/js/2.b19e5834.chunk.js.map",
+    "index.html": "/react-portfolio/index.html",
+    "precache-manifest.13922ab1fbf8a9367c50e41c5a410ead.js": "/react-portfolio/precache-manifest.13922ab1fbf8a9367c50e41c5a410ead.js",
+    "service-worker.js": "/react-portfolio/service-worker.js",
+    "static/css/main.386505b1.chunk.css.map": "/react-portfolio/static/css/main.386505b1.chunk.css.map",
+    "static/js/2.b19e5834.chunk.js.LICENSE.txt": "/react-portfolio/static/js/2.b19e5834.chunk.js.LICENSE.txt",
+    "static/media/joelawtonresume.pdf": "/react-portfolio/static/media/joelawtonresume.2be81a27.pdf",
+    "static/media/profilepic.jpg": "/react-portfolio/static/media/profilepic.0cf98127.jpg",
+    "static/media/index.css": "/react-portfolio/static/media/terminal.ab93521f.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.213b1880.js",
+    "static/js/2.b19e5834.chunk.js",
+    "static/css/main.386505b1.chunk.css",
+    "static/js/main.b4ed62b8.chunk.js"
+  ]
+}
