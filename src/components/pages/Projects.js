@@ -45,23 +45,30 @@ const projects = [
     }
 ]
 
+
+
 //This component returns the div that contains all of the content for the Projects portion of the site.
 const Projects = () => (
-    <div>
-        <h1>Projects</h1>
-            {projects.map(project => (
-                <div className={project.style} key={project.name}> 
-                    <a href={project.liveURL} target="_blank" rel="noopener noreferrer" >
-                        {project.name}
-                    </a>
-                    <a href={project.ghURL} target="_blank" rel="noopener noreferrer">
-                        GitHub Repo
-                    </a>
-                    <p>{project.tech}</p>
-                </div>
-                
-            ))}
-    </div>
+    <section>
+        <h2 className="section-header">Projects</h2>
+            <div className="project-wrapper">
+                {projects.map(project => (
+                    <div className={`${project.style} project-item`} key={project.name}> 
+                        <div className="project-header">
+                            <a href={project.liveURL} target="_blank" rel="noopener noreferrer" className="project-title">
+                                {project.name}
+                            </a>
+                            <a href={project.ghURL} target="_blank" rel="noopener noreferrer" className="project-github">
+                                GitHub
+                            </a>
+                        </div>
+                        <p className="project-tech">{project.tech}</p>
+                    </div>
+                    
+                ))}
+            </div>
+            
+    </section>
 );
 
 export default Projects;

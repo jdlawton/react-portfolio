@@ -6,7 +6,7 @@ import Projects from './pages/Projects';
 import Contact from './pages/Contact';
 import Resume from './pages/Resume';
 
-function Portfolio() {
+const Portfolio = () => {
 
     //Set up a useState and set it to 'About' to start with. This will make the site load the 'About' page 
     //when it is initially loaded. The currentPage and setCurrentPage will handle tracking which page the
@@ -32,9 +32,13 @@ function Portfolio() {
     //handle rendering and highlighting the page titles in the navigation bar.
     return (
         <div>
-            <h1>Joe Lawton</h1>
-            <Nav currentPage={currentPage} setCurrentPage={setCurrentPage} />
-            <div>{renderPage(currentPage)}</div>
+            <header className="header">
+                <h1>Joe Lawton</h1>
+                <Nav currentPage={currentPage} setCurrentPage={setCurrentPage} />
+            </header>
+            <main className="wrapper">
+                {renderPage(currentPage)}
+            </main>
             <Footer />
         </div>
     );

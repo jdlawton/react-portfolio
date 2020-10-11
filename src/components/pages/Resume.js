@@ -10,11 +10,12 @@ const resumeName = resume.split('/')[3].split('.')[0].concat(".pdf");
 
 //This component returns the div that contains all of the content for the Resume portion of the site.
 const Resume = () => (
-    <div>
-        <a href={resume} download={resumeName}>My Resume</a>
+    <section>
+        <h2 className="section-header">Resume</h2>
+        <p className="download-link">Download my <a href={resume} download={resumeName}>resume</a></p>
 
-        <h3>Front-end proficiencies</h3>
-        <ul>
+        <h3 className="list-header">Front-end proficiencies</h3>
+        <ul className="prof-list">
             <li>HTML</li>
             <li>CSS</li>
             <li>JavaScript</li>
@@ -24,8 +25,8 @@ const Resume = () => (
             <li>Bootstrap</li>
         </ul>
 
-        <h3>Back-end proficiencies</h3>
-        <ul>
+        <h3 className="list-header">Back-end proficiencies</h3>
+        <ul className="prof-list">
             <li>APIs</li>
             <li>Node</li>
             <li>Express</li>
@@ -33,7 +34,7 @@ const Resume = () => (
             <li>MongoDB, Mongoose</li>
             <li>REST</li>
         </ul>
-    </div>
+    </section>
 );
 
 export default Resume;

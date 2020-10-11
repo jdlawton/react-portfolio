@@ -1,7 +1,8 @@
 import React from 'react';
 
 //Props are passed over from the Portfolio component
-function Nav(props) {
+const Nav = (props) => {
+    
     const pages = ['About', 'Projects', 'Contact', 'Resume'];
 
     return (
@@ -14,7 +15,7 @@ function Nav(props) {
                         //was passed through the props.
                         onClick={() => props.setCurrentPage(page)}
                         className={props.currentPage === page ? 'navActive' : 'nav-link'}>
-                        {page}
+                        <h2>{page}</h2>
                     </a>
                 </li>
             ))}
