@@ -9,11 +9,13 @@ const Contact = () => {
     const [errorMessage, setErrorMessage] = useState('');
     const {name, email, message} = formState;
 
+    //This function validates the data entered into the contact form. The name and message inputs it only verifies that the field
+    //is not empty. The email field has more validation using the validateEmail function in helpers.js to verify that a valid email
+    //address has been entered.
     function handleChange(e) {
         if (e.target.name === 'email') {
             const isValid = validateEmail(e.target.value);
             console.log(isValid);
-            //isValid conditional statement
             if(!isValid){
                 setErrorMessage('Your email is invalid.');
             } else {
@@ -31,6 +33,8 @@ const Contact = () => {
         }
     };
 
+    //Since the site is front-end only right now, the submit button only logs the values from the inputs. This is where additional
+    //handling would go to submit the form datat to the back-end.
     function handleSubmit(e) {
         e.preventDefault();
         console.log(formState);

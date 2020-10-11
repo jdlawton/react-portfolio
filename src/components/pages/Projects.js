@@ -1,5 +1,7 @@
 import React from 'react';
 
+//Array of projects. If projects in the portfolio are changed or added, all you should need to do is edit/add the objects here.
+//style here is used in the stylesheet to provide a unique background image for each project.
 const projects = [
     {
         name: "Run Buddy",

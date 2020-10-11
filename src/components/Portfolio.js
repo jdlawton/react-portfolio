@@ -36,7 +36,7 @@ const Portfolio = () => {
                 <h1>Joe Lawton</h1>
                 <Nav currentPage={currentPage} setCurrentPage={setCurrentPage} />
             </header>
-            <main className="wrapper">
+            <main className="content-wrapper">
                 {renderPage(currentPage)}
             </main>
             <Footer />
