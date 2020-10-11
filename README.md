@@ -7,7 +7,7 @@
   This is a portfolio I wrote using React to showcase my full stack development skills and some of the projects I have worked on.
 
   ## Link
-  [My Portfolio]()
+  [My Portfolio](https://jdlawton.github.io/react-portfolio/)
 
   ![Screenshot](./portfolioscreenshot.png)
 
