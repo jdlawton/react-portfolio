@@ -32,18 +32,18 @@ const projects = [
         style: "fo-char-mgr"
     },
     {
-        name: "Noteworthy",
-        liveURL: "https://lit-shelf-32609.herokuapp.com/",
-        ghURL: "https://github.com/jdlawton/noteworthy",
-        tech: "Node.js/Express",
-        style: "noteworthy"
-    },
-    {
         name: "/dev/zero > blog",
         liveURL: "https://fast-caverns-43047.herokuapp.com/",
         ghURL: "https://github.com/jdlawton/tech-blog",
         tech: "Node.js/Express/MVC",
         style: "blog"
+    },
+    {
+        name: "tech-docs",
+        liveURL: "https://evening-gorge-96741.herokuapp.com/",
+        ghURL: "https://github.com/jdlawton/tech-docs",
+        tech: "MERN / GraphQL",
+        style: "network"
     }
 ]
 
